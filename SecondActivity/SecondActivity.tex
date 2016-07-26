@@ -26,6 +26,20 @@ Here's a second sample question.
    Evaluate $2 + 3 = \answer{5}$ or that $x \cdot x = \answer{x^2}$.
 \end{problem}
 
-\youtube{BbX44YSsQ2I}
+\begin{tikzpicture}
+\node[rectangle,draw, minimum size=1cm] (A) at  (-3,.75) {A};
+\node[rectangle,draw, minimum size=1cm] (B) at  (-3,-.75) {B};
+\node[circle,draw, minimum size=1cm] (C) at  (-1.50,-.75)  {C};
+\node[rectangle,draw, minimum size=1cm] (D) at  (-1.50,.75)  {D};
+\node[] at (-2.25,-1.75) {Caller};
+     \draw[->, black, thick] (-.5,0) -- (.5,0);
+    \draw [thin, dashed, -latex] (B) to [bend left] (D);
+    \draw [thin, dashed, -latex] (D) to [bend left] (B);
+\node[rectangle,draw, minimum size=1cm] (A) at  (1.5,.75) {A};
+\node[rectangle,draw, minimum size=1cm] (B) at  (3,.75) {B};
+\node[circle,draw, minimum size=1cm] (C) at  (3,-.75)  {C};
+\node[circle,draw, minimum size=1cm] (D) at  (1.5,-.75)  {D};
+\node[] at (2.25,-1.75) {Caller};
+\end{tikzpicture}
 
 \end{document}

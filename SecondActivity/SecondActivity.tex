@@ -1,5 +1,5 @@
 \documentclass{ximera}
-
+\usetikzlibrary{shapes}
 \title{Practice 2}
 \author{A Ximera Author}
 
@@ -31,7 +31,7 @@ Here's a second sample question.
 \begin{center}
 \begin{tikzpicture}
 \node[rectangle,draw, minimum size=1cm] (A) at  (-3,.75) {A};
-\node[rectangle,draw, minimum size=1cm] (B) at  (-3,-.75) {B};
+\node[diamond,draw, minimum size=1cm] (B) at  (-3,-.75) {B};
 \node[circle,draw, minimum size=1cm] (C) at  (-1.50,-.75)  {C};
 \node[rectangle,draw, minimum size=1cm] (D) at  (-1.50,.75)  {D};
 \node[] at (-2.25,-1.75) {Caller};
